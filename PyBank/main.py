@@ -55,7 +55,7 @@ print(f"Total Months: {MonthsTotal}")
 print(f"Total: {int(PLTotal)}")
 print("Average  Change: $" + "{0:.2f}".format((sum(ProfitChange) / len(ProfitChange))))
 print(f"Greatest Increase in Profits: {GreatestMonth} (${int(GreatestProfit)})")
-print(f"Greatest Increase in Profits: {WorstMonth} (${int(WorstLoss)})")
+print(f"Greatest Decrease in Profits: {WorstMonth} (${int(WorstLoss)})")
 
 # Prints results to text file
 with open("MainOutput.txt", "w") as text_file:
@@ -66,7 +66,7 @@ with open("MainOutput.txt", "w") as text_file:
     print(f"Total: {int(PLTotal)}", file=text_file)
     print("Average  Change: $" + "{0:.2f}".format((sum(ProfitChange) / len(ProfitChange))), file=text_file)
     print(f"Greatest Increase in Profits: {GreatestMonth} (${int(GreatestProfit)})", file=text_file)
-    print(f"Greatest Increase in Profits: {WorstMonth} (${int(WorstLoss)})", file=text_file)
+    print(f"Greatest Decrease in Profits: {WorstMonth} (${int(WorstLoss)})", file=text_file)
 
             
         
